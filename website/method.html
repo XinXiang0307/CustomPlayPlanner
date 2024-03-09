@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<!-- ==============================
+    Project:        ANLY-503 GROUP9
+    Version:        1.0
+    Author:         Yanfeng Zhang, Mingqian Liu, Xin Xiang
+================================== -->
+<html lang="en" class="no-js">
+    <!-- BEGIN HEAD -->
+    <head>
+        <meta charset="utf-8"/>
+        <title>ANLY-503 GROUP9</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="" name="description"/>
+        <meta content="" name="author"/>
+        
+
+        <link href="css/front.css" rel="stylesheet">
+        <!-- GLOBAL MANDATORY STYLES -->
+        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+        <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css"/>
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+        <!-- PAGE LEVEL PLUGIN STYLES -->
+        <link href="css/animate.css" rel="stylesheet">
+
+        <!-- THEME STYLES -->
+        <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="favicon.ico"/>
+        <style>
+            #brushes {
+            font-size: 18px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #brushes input[type=radio] {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            outline: none;
+            border: 2px solid #999;
+            cursor: pointer;
+        }
+        #brushes input[type=radio]:checked {
+            background-color: #999;
+        }
+        #brushes input[type=radio]:hover {
+            background-color: #ccc;
+        }
+        </style>
+    </head>
+    <!-- END HEAD -->
+
+
+    <!-- BODY -->
+    <body id="body" data-spy="scroll" data-target=".header">
+
+        <!--========== HEADER ==========-->
+        <header class="header navbar-fixed-top">
+            <!-- Navbar -->
+            <nav class="navbar" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="menu-container js_nav-item">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="toggle-icon"></span>
+                        </button>
+
+                        <!-- Logo -->
+                        <div class="logo"  style="margin-left: -50px">
+                            <a class="logo-wrap" href="#body">
+                                <img class="logo-img logo-img-main" src="img/video-console.png" alt="Asentus Logo">
+                                <img class="logo-img logo-img-active" src="img/video-console.png" alt="Asentus Logo">
+                            </a>
+                        </div>
+
+                        <!-- End Logo -->
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse nav-collapse">
+                        <div class="menu-container">
+                            <ul class="nav navbar-nav navbar-nav-right">
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="./index.html#body">Home</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="./index.html#about">Introduction</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="./index.html#experience">Data</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="./index.html#work">Exploration</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="./index.html#Conclusion">Conclusion</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="./index.html#Method">Method</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="./index.html#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Navbar Collapse -->
+                </div>
+            </nav>
+            <!-- Navbar -->
+        </header>
+        <!--========== END HEADER ==========-->
+
+
+        <!--========== PAGE LAYOUT ==========-->
+        <!-- About -->
+        <br><br><br><br>
+
+        <!-- Viz1 -->
+        <div id="experience">
+            <div class="bg-color-sky-light" data-auto-height="true">
+                <div class="container content-lg">
+                    <div class="row">
+                        <div class="col-sm-3 sm-margin-b-30">
+                            <div class="text-right sm-text-left">
+                                <h2 class="margin-b-0" style="font-family: pixl-font; font-size: 40px;">Figure-1 Bubble Plot</h2>
+                                <p style="font-family: pixl-dark-font;color: #337ab7;text-align: right;">Innovative-view <br> Tooltip-view</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-sm-offset-1">
+                            <p><strong>Method: </strong>D3.js</p>
+                            <p><strong>Purpose: </strong>The popularity of a video game can significantly impact its success, making it a crucial aspect to analyze for us. A reliable indicator of popularity is the number of current players in a game, as it can reflect the game's appeal and user engagement. To gain insight into the popularity of different genres of video games and identify the most popular games, a bubble plot visualization can be used. This type of visualization provides an intuitive and comprehensive view of the player count for the top video games, with each bubble representing a game and its size indicating the number of players. Through the color distribution of the bubbles, users can quickly identify the most popular genres of games. Additionally, the visualization can provide specific details on the current top-performing games, making it a useful tool for industry professionals and gamers alike.                            </p>
+                            <p><strong>Data preparation: </strong>We choose the top 100 video games for the bubble plot visualization, including the rank of game, the number of players, game name, release date, description and images for the game. Choosing the top 100 video games provides a representative sample of the most popular and widely played games in the market. While there are tens of thousands of video games available, a small number of them tend to dominate in terms of player count and sales. In fact, it's often observed that the top 100 games account for a significant portion of the total player count and revenue generated by the gaming industry. For example, the top 100 games make up around 80% of the total player base or sales revenue, despite representing only a small percentage (less than 1%) of all games available. Analyzing and visualizing data for the top 100 video games can provide valuable insights into the most significant trends and patterns in the gaming industry. Moreover, the top 100 games are often more widely recognized and have a larger player base, making them a more relevant and useful dataset for analyzing the popularity of video games.</p>
+                            <p><strong>Encoding choices: </strong>Each bubble represents a game, and its size indicates the number of players, its color indicates the genres of the game, the tooltip shows detailed information, and games closer to the center of the circle have higher rankings. Through the color distribution of the bubbles, users can quickly identify the most popular genres of games. </p>
+                            <p><strong>Interactivity: </strong>
+                                <ul>
+                                    <li><p>Tooltips: When hovering over the bubbles, there is a tooltip including information about the games (name, rank, player number, description, release date, and game poster). </p></li>
+                                    <li><p>Drag features: It is possible to drag a circle on the chart to reorganize, with the position of every other circle updating automatically. </p></li>
+                                </ul></p>
+                            <p><strong>Difficulty: </strong>For this bubble plot, to make data visualization more manageable and less overwhelming, enabling users to focus on the most critical aspects of the data, we have not tagged the exact number of the bubbles, however, users can find more information from the tooltips.</p>
+                            <p><strong>Reference: </strong><a href="https://d3-graph-gallery.com/circularpacking.html">https://d3-graph-gallery.com/circularpacking.html</a></p>
+                            <p><strong>Screenshot: </strong><br><img src="img/fig-1.2.png" alt="Asentus Logo" style="width: 360px;float: left;"><img src="img/fig-1.1.png" alt="Asentus Logo" style="width: 360px;float: right;"></p>
+                        <!--// end row -->
+                        
+                    </div>
+
+                </div>
+            </div>
+        
+        </div>
+        <!-- End Viz1 -->
+
+        <!-- Viz2 -->
+        <div id="Conclusion">
+                <div class="container content-lg">
+                    <div class="row">
+                        <div class="col-sm-3 sm-margin-b-30">
+                            <div class="text-right sm-text-left">
+                                <h2 class="margin-b-0" style="font-family: pixl-font; font-size: 40px;">Figure-2 Circular Bar Plot</h2>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-sm-offset-1">
+                            <p><strong>Method: </strong>D3.js</p>
+                            <p><strong>Purpose: </strong>Sales across different genres and regions are also crucial to the gaming industry's success and growth. To gain insight into the popularity of each game genre and region, a circular bar plot visualization can be used. This visualization provides a comprehensive view of the sales distribution across different game genres. The circular layout of the bar plot enables users to compare the sales volume of each genre easily and identify the most popular genres. Moreover, the circular bar plot also differentiates the sales volume by region, adding another layer of insight into the gaming industry's sales trends. By using different colors to represent sales volumes in different regions, users can quickly identify the regions where certain game genres are more popular. This information is essential for players who want to gain insight into the gaming industry's global trends and tailor their strategies accordingly.                            </p>
+                            <p><strong>Data preparation: </strong>To analyze the distribution of game sales by genre and region, we utilized a comprehensive dataset of approximately 30,000 games. The dataset was processed by merging and grouping the data, enabling us to extract and differentiate the sales figures for each game genre and region. By aggregating the sales data for each genre and region, we were able to gain a more in-depth understanding of the gaming industry's sales trends, identifying the most popular game genres and regions where certain game genres are particularly successful. </p>
+                            <p><strong>Encoding choices: </strong>This visualization provides a comprehensive view of the sales distribution across different game genres. Each bar represents a specific genre, its length indicates the sales volume, and the bars' color indicates the sales regions.</p>
+                            <p><strong>Interactivity: </strong>This is a static visualization.                            </p>
+                            <p><strong>Difficulty: </strong>Since D3.js needs to import external javascript files in the process of embedding html, however, for circular bar plot, its implementation needs to use global variables to iteratively generate data, which will cause conflicts with other D3 visualizations existing on the web page. So for this visualization, we used an additional image link to it.</p>
+                            <p><strong>Reference: </strong><a href="https://d3-graph-gallery.com/circular_barplot.html">https://d3-graph-gallery.com/circular_barplot.html</a></p>
+                            <p><strong>Screenshot: </strong><br><img src="img/fig-2.png" alt="Asentus Logo" style="width: 380px;"></p>
+                     
+                        <!--// end row -->
+                        
+                    </div>
+
+            </div>
+        
+        </div>
+        <!-- End Viz2 -->
+
+                <!-- Viz3 -->
+                <div id="experience">
+                    <div class="bg-color-sky-light" data-auto-height="true">
+                        <div class="container content-lg">
+                            <div class="row">
+                                <div class="col-sm-3 sm-margin-b-30">
+                                    <div class="text-right sm-text-left">
+                                        <h2 class="margin-b-0" style="font-family: pixl-font; font-size: 40px;">Figure-3 Violin Plot</h2>
+                                        <p style="font-family: pixl-dark-font;color: #337ab7;text-align: right;">Tooltip-view</p>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-8 col-sm-offset-1">
+                                    <p><strong>Method: </strong>Plotly</p>
+                                    <p><strong>Purpose: </strong>The pricing of video games plays a critical role as a barrier to entry for players with different purchasing power. The price of a video game is highly dependent on its genre, as each genre imposes different requirements on development, which directly affects pricing decisions. To gain a deeper understanding of the pricing distribution among different types of video games, a Violin plot visualization can be employed. This type of visualization allows for a clear display of data distribution, an intuitive view of data density, and the ability to simultaneously compare multiple genres. Each Violin in the plot represents a different genre, and its width indicates the density of game prices. Additionally, a dashed line represents the average price across all games. Through the distinct position and shape of each Violin, users can gain a comprehensive understanding of the pricing distribution across various genres.</p>
+                                    <p><strong>Data preparation: </strong>Before Violin plot visualization, we conducted an exploratory data analysis (EDA) of game prices and found a large number of outliers, which adversely affected the overall visualization, making it impossible for users to clearly observe the price distribution. In order to better present the price distribution of each genre, we use the IQR (interquartile range) method to remove outliers in the price, so that the price distribution range is limited between 0-30 dollars. In addition, the processing results also confirm that the price of video games is mainly distributed in the range of 0-30 dollars. Through such data preparation, our violin plot visualization can better display the distribution of data and provide a better user experience.
+                                    </p>
+                                    <p><strong>Encoding choices: </strong><ul>
+                                        <li><p>Before choosing to use Violin plot, I explored using Heatmap and Histogram to display game price distribution, but found that Violin plot can more clearly show the price distribution between different game types and improve readability. This is because Violin plot can display distribution density and shape at the same time, making the characteristics of data distribution more obvious, and can compare between different genres, further improving the efficiency of data interpretation.</p></li>
+                                        <li><p>Each genre is represented by a separate Violin, and the width of each Violin reflects the density of game prices within that genre. A horizontal dashed line is also incorporated into the plot to denote the average price of all games.</p></li>
+                                    </ul></p>
+                                    <p><strong>Interactivity: </strong><ul>
+                                        <li><p>Tooltips: When hovering over the violin, the tooltip will display the name of the genre and price statistics, including average price, median, standard deviation, etc.</p></li>
+                                    </ul></p>
+                                    <p><strong>Difficulty: </strong>
+                                        When using violin plot for visualization, we found that since the shape of the entire violin graph cannot be changed, there is a case of $0 in the price distribution, resulting in the tail of violin may be lower than $0. This can be confusing for users as it is difficult for users to tell if there is data below $0. Therefore, we need to pay attention to this situation and consider whether we need to include additional instructions or labels in the visualization to help users better understand the distribution of the data.
+                                        </p>
+                                    <p><strong>Reference: </strong><a href="https://plotly.com/python/violin/">https://plotly.com/python/violin/</a></p>
+                                    <p><strong>Screenshot: </strong><br><img src="img/fig-3.1.png" alt="Asentus Logo" style="width: 360px;float: left;"><img src="img/fig-3.2.png" alt="Asentus Logo" style="width: 360px;float: right;"></p>
+                             
+                                <!--// end row -->
+                                
+                            </div>
+        
+                        </div>
+                    </div>
+                
+                </div>
+                <!-- End Viz3 -->
+        
+                <!-- Viz4 -->
+                <div id="Conclusion">
+                        <div class="container content-lg">
+                            <div class="row">
+                                <div class="col-sm-3 sm-margin-b-30">
+                                    <div class="text-right sm-text-left">
+                                        <h2 class="margin-b-0" style="font-family: pixl-font; font-size: 40px;">Figure-4 Radar Chart
+                                            <p style="font-family: pixl-dark-font;color: #337ab7;text-align: right;">Tooltip-view</p>
+
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8 col-sm-offset-1">
+                                    <p><strong>Method: </strong>D3.js</p>
+                                    <p><strong>Purpose: </strong>The purpose of the radar chart is to provide users with a stronger comparison in order to better understand the distribution of different game types in various price ranges. This is achieved by displaying multiple types of weights in different price ranges at the same time. As an independent representation of each genre, radar charts facilitate easy comparison between genres. Unlike violin charts, which focus primarily on exploring the distribution of prices within each category, radar charts place more emphasis on comparing the relative frequencies of different categories within the same price range.</p>
+                                    <p><strong>Data preparation: </strong>When doing data preparation for radar charts, I divide the price range into five different intervals, including $0, $1-$10, $10-$20, $20-$50, and $50-$500. Since these price ranges are fixed, I did not exclude outliers in the data. When counting the data under each category, I converted them into percentages to better present them in the radar chart. This method helps to intuitively compare the proportions of different genres in different price ranges, enabling users to understand the differences between different genres more clearly.</p>
+                                    <p><strong>Encoding choices: </strong><ul>
+                                        <li><p>To facilitate users' exploration of genre by selecting price ranges of interest according to their spending power, I divided game prices into five price range bands, including $0, $1-$10, $10-$20, $20-$50, and $50-$500. This way of dividing price ranges represents, to some extent, the general perception of free, acceptable and expensive games. Such a division can help users to select and compare various genre games more easily.</p></li>
+                                        <li><p>Each corner in the radar chart represents a genre, while each color represents a price range in order to present the percentage of multiple genres in different price ranges at the same time.</p></li>
+                                        <li><p>For the visual presentation of the radar chart, I borrowed from D3.js gallery's radar chart and improved it. Specifically, when the user moves the mouse over a price range color, the color changes from transparent to solid, thus reducing the interference of other price range colors to the color the user clicks on and improving the clarity and interactivity of the visualization.</p></li>
+                                    </ul></p>
+                                    <p><strong>Interactivity: </strong><ul>
+                                        <li><p>Tooltips: When the user clicks on the sharp corner of a genre on the radar chart corresponding to the color of a certain price range, the name and percentage of that genre will be displayed on the screen to help the user better understand the distribution of different genres in that price range.</p></li>
+                                        <li><p>Hovers: When the user hovers over a different price range of the radar chart, the color changes from transparent to solid to reduce the interference of other price range colors with user interaction.</p></li>
+                                    </ul></p>
+                                    <p><strong>Difficulty: </strong>In order to improve the readability of the radar chart, we need to solve the problem that the similar proportions in different price ranges may make it difficult for users to identify. To this end, we employ an interactive technique that changes the transparency of the price range on mouseover to mitigate this problem. This technique allows users to see more clearly the proportion of each price range without being disturbed by similar proportions.
+                                    </p>
+                                    <p><strong>Reference: </strong><a href="https://d3-graph-gallery.com/spider.html">https://d3-graph-gallery.com/spider.html</a></p>
+                                    <p><strong>Screenshot: </strong><br><img src="img/fig-4.1.png" alt="Asentus Logo" style="width: 360px;float: left;"><img src="img/fig-4.2.png" alt="Asentus Logo" style="width: 360px;float: right;"></p>
+                                    
+                                <!--// end row -->
+                                
+                            </div>
+        
+                    </div>
+                
+                </div>
+                <!-- End Viz4 -->
+
+
+
+        <!-- Viz5 -->
+        <div id="Conclusion">
+            <div class="bg-color-sky-light" data-auto-height="true">
+                <div class="container content-lg">
+                    <div class="row">
+                        <div class="col-sm-3 sm-margin-b-30">
+                            <div class="text-right sm-text-left">
+                                <h2 class="margin-b-0" style="font-family: pixl-font; font-size: 40px;">Figure-5 Ridgeline Plot</h2>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-sm-offset-1">
+                            <p><strong>Method: </strong>Altair</p>
+                            <p><strong>Purpose: </strong>Playtime is often a critical consideration for individuals seeking a new gaming experience. As the video game industry has expanded, the gaming community has diversified to include not only teenagers but also people with full-time jobs and daily responsibilities. Our objective is to analyze the median playtime for different game genres, assisting gamers in selecting a game that accommodates their schedules and preferences.</p>
+                            <p><strong>Data preparation: </strong>For this visualization, we utilized the Steam dataset, focusing on the median playtime variable. After conducting summary statistics on the median playtime, we performed several data cleaning steps. First, we removed all games with a 0-hour median playtime, as this value is not meaningful for analysis and should not be included in the distribution. Next, we applied a log transformation to the original variable to reduce the range of median playtime values and mitigate extreme skewness in the plot.</p>
+                            <p><strong>Encoding choices: </strong><ul>
+                                <li><p>Position: We used a faceted layout with each row representing a genre, which facilitates side-by-side comparisons of playtime distributions across genres.</p></li>
+                                <li><p>Color: Unique colors were allocated to each genre to improve differentiation and readability.</p></li>
+                                <li><p>Size: The height of the density plot in each row represents the frequency of games with a particular log-transformed median playtime, while the width of the plot indicates the range of playtime values.</p></li>
+                                <li><p>width of the plot indicates the range of playtime values.
+                                    Shape: The ridgeline plot utilizes a series of overlapping density plots, making it easier to identify the distribution patterns and peaks of median playtime within each genre.</p></li>
+                            </ul></p>
+                            <p><strong>Interactivity: </strong>This is a static plot.</p>
+                            <p><strong>Difficulty: </strong>Initially, we opted for a point distribution plot to display the distribution of each genre's playtime. However, we discovered that the point plot was not sufficiently clear and straightforward for viewers to quickly discern the distribution patterns. Our goal was to showcase the playtime distribution in an easily interpretable manner, enabling gamers to identify the peak and skewness of each genre's playtime and make comparisons at a glance. Ultimately, we decided on a ridgeline plot, which offers a more intuitive representation. However, identifying this type of plot and implementing it using Altair proved to be time-consuming and presented a challenge.</p>
+                            <p><strong>Reference: </strong><a href="https://altair-viz.github.io/altair-viz-v4/gallery/ridgeline_plot.html">https://altair-viz.github.io/altair-viz-v4/gallery/ridgeline_plot.html</a></p>
+                            <p><strong>Screenshot: </strong><br><img src="img/fig-5.png" alt="Asentus Logo" style="width: 360px;"></p>
+                     
+                        <!--// end row -->
+                        
+                    </div>
+
+            </div>
+        </div>
+        </div>
+        <!-- End Viz5 -->
+                        <!-- Viz6 -->
+                        <div id="experience">
+
+                                <div class="container content-lg">
+                                    <div class="row">
+                                        <div class="col-sm-3 sm-margin-b-30">
+                                            <div class="text-right sm-text-left">
+                                                <h2 class="margin-b-0" style="font-family: pixl-font; font-size: 40px;">Figure-6 Parallel </h2>
+                                                <p style="font-family: pixl-dark-font;color: #337ab7;text-align: right;">Innovative-view<br>Linked-view <br> Tooltip-view</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-8 col-sm-offset-1">
+                                            <p><strong>Method: </strong>D3.js+Plotly</p>
+                                            <p><strong>Purpose: </strong>The purpose of this visualization is to explore the relationship between expert ratings and user ratings in the video game dataset, as well as the relationship between each categorical variable and game scores, to help users better understand the quality and characteristics of games. Ratings are crucial in deciding to buy a game as they provide insight into the quality of the game. Before buying a game, players often need to know the ratings and reviews of the game to decide whether it is worth buying. Unlike other factors such as sales, price, and playtime, which can be subjective, ratings are reviews from real users and gamers, so they are more informative. Through the correlation analysis of scatter plots and parallel category plots, users can more intuitively understand the score distribution of different games, and can compare and analyze the quality, type and other characteristics of games, so as to make more informed purchase decisions.</p>
+                                            <p><strong>Data preparation: </strong>During the data preprocessing and EDA process, we found that the number of relevant features (platform, publisher, developer, classification, and rating) in the game dataset is huge. Considering that presenting all the data would lead to overly complex and confusing visualizations, we chose to keep the 8 or 5 most numerous features of each feature in order to reduce the amount of data and improve the readability of the visualization chart. Therefore, in the data preprocessing stage, we adopted the method of data screening and filtering to keep only important categorical variables. In this way, the generated parallel diagrams will show clear and clear relationships, providing a reliable basis for subsequent analysis and visualization.</p>
+                                            <p><strong>Encoding choices: </strong><ul>
+                                                <li><p>Using a scatter plot with user score and critic score as the horizontal and vertical axes respectively, it is possible to clearly see the relationship between them, i.e. the differences or similarities in ratings between professional ratings and users. Scatter plots also make it easy to show outliers or outliers to help us better understand the data set. With scatter plots, we can visualize the distribution of data points, detect if there are some interesting patterns or trends in the data set, and then better analyze the data and make more accurate conclusions.</p></li>
+                                                <li><p>At the same time, the parallel category charts can show the relationship between multiple categorical variables and the cross-correlation between each categorical variable at the same time. By presenting the data in groups, it makes the data more readable and also highlights different data characteristics through color mapping, etc. Linking parallel category charts with scatter plots can help users understand the relationship between different categorical variables and ratings more intuitively and thus analyze game data more accurately.</p></li>
+                                            </ul></p>
+                                            <p><strong>Interactivity: </strong><ul>
+                                                <li><p>User input 1/2: Users can use this button to select different colors to mark different game points. When the user circles a part of the range of points and then circles another part of the range of points, the scatter plot will show two different colors of points, and the two colors in the parallel plot represent the trend of the relevant features of the game in these two regions. Users can also click on the categorical variables in the parallel categorical graph to make the point areas in the scatter plot appear in two different colors, which is used to explore the distribution of the categorical variables in the score for the game features of interest. This interaction helps the user to quickly discover patterns and characteristics of the data.</p></li>
+                                                <li><p>Eraser: When the user wants to eliminate the color of a previously circled point area, the default state can be restored by clicking on the eraser button. Users can restore the default state by circling the scatter plot area or clicking on the parallel sorting chart, an interaction that makes it easier for users to explore the data.</p></li>
+                                                
+                                            </ul></p>
+                                            <p><strong>Difficulty: </strong>When visualizing the parallel classification graph, I encountered two difficulties. The first was that when there are too many feature classification variables in the dataset, the visualization graph becomes very complex and difficult to 
+                                                understand, so I chose to ensure readability by filtering the platforms and developers of the game and keeping only the top 8 data. The second issue was that when using the d3.js example visualization for interpretation, I found that the interpretation of this graphic was different from our topic and content, so I made several attempts and finally innovatively designed the visualization graphic to fit our project.
+                                                </p>
+                                            <p><strong>Reference: </strong><a href="https://d3-graph-gallery.com/parallel.html">https://d3-graph-gallery.com/parallel.html</a></p>
+                                            <p><strong>Screenshot: </strong><br><img src="img/fig-6.1.png" alt="Asentus Logo" style="width: 360px;float: left;"><img src="img/fig-6.2.png" alt="Asentus Logo" style="width: 360px;float: right;"></p>
+                                     
+                                        <!--// end row -->
+                                        
+                                    </div>
+                
+                                </div>
+                     
+                        
+                        </div>
+                        <!-- End Viz6 -->
+                <!-- Viz7 -->
+                <div id="experience">
+                    <div class="bg-color-sky-light" data-auto-height="true">
+                        <div class="container content-lg">
+                            <div class="row">
+                                <div class="col-sm-3 sm-margin-b-30">
+                                    <div class="text-right sm-text-left">
+                                        <h2 class="margin-b-0" style="font-family: pixl-font; font-size: 40px;">Figure-7 Histogram</h2>
+                                        <p style="font-family: pixl-dark-font;color: #337ab7;text-align: right;">Tooltip-view</p>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-8 col-sm-offset-1">
+                                    <p><strong>Method: </strong>Plotly Express</p>
+                                    <p><strong>Purpose: </strong>Scores and ratings play a pivotal role in gamers' decision-making process when considering a new game purchase. Unlike factors such as price, popularity, and playtime, ratings offer genuine feedback from gamers who have played or purchased the game. Our goal is to display the proportion of positive and negative reviews for each game in each genre, aiding players in finding highly-regarded games. By utilizing a histogram, we anticipate revealing distinct distributions for various genres.</p>
+                                    <p><strong>Data preparation: </strong>To create a facet-grid histogram displaying the proportion of ratings for each game while also grouping them by the rating type (positive/negative), we performed several data cleaning steps. First, we generated two new columns named "positive_rate" and "negative_rate" to indicate the proportion of each rating type, calculated by dividing the number of positive/negative ratings by the total number of ratings. Next, we formed two subsets of the dataframe: one containing genres and positive_rate, and the other containing genres and negative_rate. This allowed us to add labels to each subset individually with "positive" and "negative," which later helped us utilize the hue argument to distinguish both distributions on the same facet. Finally, after manually adding the label "type of rating," we concatenated the two subsets, concluding the data preparation phase.</p>
+                                    <p><strong>Encoding choices: </strong><ul>
+                                        <li><p>Position: We used a facet-grid layout to display separate histograms for each genre, allowing for easy comparison between genres.</p></li>
+                                        <li><p>Color: We assigned distinct colors to positive and negative ratings to make it easy for viewers to differentiate between them.We used light green for positive ratings and purple for negative ratings.</p></li>
+                                        <li><p>Size: The width of the bars in the histogram represents the rating proportions, while the height represents the frequency of games with a particular rating proportion. The height of the bars in the histogram represents the total count for each specific range of rating proportions.</p></li>
+                                        <li><p>Shape: We used rectangular bars to create the histograms, which is a common and easily recognizable representation for this type of visualization.</p></li>
+                                    </ul></p>
+                                    <p><strong>Interactivity: </strong>We incorporated tooltips for each bin in the histogram to enhance user engagement and understanding. When users hover over the bins, they are presented with relevant information, including rating type (positive or negative), genre, proportion range, and the count of games within that range. This interactive feature allows for a more intuitive exploration of the data and helps users quickly gather insights.</p>
+                                    <p><strong>Difficulty: </strong>Initially, we aimed to incorporate a smooth trend line over each facet to provide an overview of the distribution. However, we encountered a challenge due to the limitations of Plotly Express, the visualization library we used. Unlike D3 and JavaScript, which allow for greater customization flexibility when adding multiple encodings, Plotly Express does not offer the option to include an additional encoding shape on each facet element.</p>
+                                    <p><strong>Reference: </strong><a href="https://plotly.com/python/facet-plots/">https://plotly.com/python/facet-plots/</a></p>
+                                    <p><strong>Screenshot: </strong><br><img src="img/fig-7.1.png" alt="Asentus Logo" style="width: 360px;float: left;"><img src="img/fig-7.2.png" alt="Asentus Logo" style="width: 360px;float: right;"></p>
+                             
+                                <!--// end row -->
+                                
+                            </div>
+        
+                        </div>
+                    </div>
+                
+                </div>
+                <!-- End Viz1 -->
+        
+
+        <!-- Contact -->
+        <div id="contact">
+                <div class="container content-lg">
+                    <div class="row">
+                        <div class="col-sm-3 sm-margin-b-30">
+                            <div class="text-right sm-text-left">
+                                <h2 class="margin-b-0" style="font-family: pixl-font; font-size: 40px;">Contacts</h2>
+                                <p>Contact Us.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-sm-offset-1">
+                            <div class="row">
+                                <div class="col-md-3 col-xs-6 md-margin-b-30">
+                                    <h5>ANLY-503 </h5>
+                                    <a href="https://marckvaisman.georgetown.domains/anly503/">Advanced Data Visualization Group9</a>
+                                </div>
+                                <div class="col-md-3 col-xs-6 md-margin-b-30">
+                                    <h5>Mingqian Liu</h5>
+                                    <a href="mailto:#">ml2078@georgetown.edu</a>
+                                </div>
+                                <div class="col-md-3 col-xs-6">
+                                    <h5>Xin Xiang</h5>
+                                    <a href="mailto:#">xx123@georgetown.edu</a>
+                                </div>
+                                <div class="col-md-3 col-xs-6">
+                                    <h5>Yanfeng Zhang</h5>
+                                    <a href="mailto:#">yz1045@georgetown.edu</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// end row -->
+                </div>
+        </div>
+        <!-- End Contact -->
+        <!--========== END PAGE LAYOUT ==========-->
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer">
+            <div class="content container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        
+                    </div>
+                    <div class="col-xs-6 text-right sm-text-left">
+                    </div>
+                </div>
+                <!--// end row -->
+            </div>
+        </footer>
+        <!--========== END FOOTER ==========-->
+
+        <!-- Back To Top -->
+        <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+        <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+        <!-- CORE PLUGINS -->
+        <script src="vendor/jquery.min.js" type="text/javascript"></script>
+        <script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+        <!-- PAGE LEVEL PLUGINS -->
+        <script src="vendor/jquery.easing.js" type="text/javascript"></script>
+        <script src="vendor/jquery.back-to-top.js" type="text/javascript"></script>
+        <script src="vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
+        <script src="vendor/jquery.wow.min.js" type="text/javascript"></script>
+        <script src="vendor/jquery.parallax.min.js" type="text/javascript"></script>
+        <script src="vendor/jquery.appear.js" type="text/javascript"></script>
+        <script src="vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
+        <script src="vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+
+        <!-- PAGE LEVEL SCRIPTS -->
+        <script src="js/layout.min.js" type="text/javascript"></script>
+        <script src="js/components/progress-bar.min.js" type="text/javascript"></script>
+        <script src="js/components/masonry.min.js" type="text/javascript"></script>
+        <script src="js/components/wow.min.js" type="text/javascript"></script>
+
+    </body>
+    <!-- END BODY -->
+</html>
