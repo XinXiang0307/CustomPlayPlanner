@@ -1,6 +1,4 @@
-# ANLY 503 Visual Narrative Project Group 9
-
-## Tailor-Made Fun: Your Personalized Gaming Guide
+# Tailor-Made Fun: Your Personalized Gaming Guide
 
 * Mingqian Liu ml2078@georgetown.edu
 * Xin Xiang xx123@georgetown.edu
